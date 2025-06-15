@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marco de trabajo para la toma de decisiones éticas en ciberseguridad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url('fondo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .caratula {
+      background-color: rgba(0, 64, 128, 0.85);
+      color: white;
+      padding: 40px 20px 30px 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .caratula .logo {
+      width: 120px;
+      margin: 0 auto 20px auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .caratula h1, .caratula h2 {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    .caratula p {
+      margin: 2px 0;
+    }
+    .caratula .autores, .caratula .profesor, .caratula .curso {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1.titulo-principal {
+      text-align: center;
+      color: #004080;
+      font-weight: 900;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .contenedor {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      background: rgba(255,255,255,0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .respuesta {
+      margin-top: 20px;
+      font-style: italic;
+      color: #444;
+      white-space: pre-wrap;
+    }
+    .alerta-etica {
+      background-color: #f8d7da;
+      color: red;
+      font-weight: bold;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Estilos para las preguntas y respuestas FAQ */
+    .contenedor button {
+      width: 100%;
+      text-align: left;
+      background-color: #e7f1ff;
+      color: #004080;
+      font-weight: 600;
+      border: 1px solid #007BFF;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contenedor button:hover {
+      background-color: #c2dbff;
+    }
+    .respuesta-faq {
+      background-color: #f0f8ff;
+      padding: 10px;
+      border-left: 4px solid #007BFF;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="caratula">
+    <img src="logo.png" alt="Logo Universidad Mariano Gálvez" class="logo" />
+    <h1>UNIVERSIDAD MARIANO<br>GÁLVEZ DE GUATEMALA</h1>
+    <p>FACULTAD DE INGENIERÍA EN SISTEMAS DE INFORMACIÓN</p>
+    <p>PROGRAMA DE POSGRADOS</p>
+    <h2>PROYECTO FINAL</h2>
+    <div class="autores">
+      <strong>Autores:</strong><br />
+      Edin Eliceo Isaac Moran Chen, emoranc6@miumg.edu.gt <br />
+      Estefani Haydeé Balcarcel Alonzo, ebalcarcela1@miumg.edu.gt <br />
+      Carlos Antonio Juarez Camey, cjuarezc7@miumg.edu.gt
+    </div>
+    <div class="profesor">
+      <strong>Profesor:</strong> Luis Mariano Moreira Flores
+    </div>
+    <div class="curso">
+      <strong>Curso:</strong> Ética y valores
+    </div>
+  </div>
+
+  <h1 class="titulo-principal">Marco de trabajo para la toma de decisiones éticas en ciberseguridad</h1>
+
+ <!-- Validación del Framework -->
+<div class="contenedor">
+  <h2>Validación del Framework Ético, y tú, ¿Qué harías?</h2>
+  <p>
+    Se aplicó el framework al caso estudiado: <strong>Monitorización del comportamiento de empleados en una empresa multinacional</strong>.
+  </p>
+
+  <!-- Imagen insertada aquí -->
+  <img src="ruta_de_la_imagen.jpg" alt="Monitorización empleados" style="display:block; margin: 15px auto; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.15);">
+
+  <p>
+    Una empresa multinacional está implementando un sistema avanzado de monitorización
+    que registra todas las actividades de los empleados en los sistemas informáticos, incluyendo
+    correos electrónicos, navegación web, uso de aplicaciones y patrones de tipeo. El objetivo
+    declarado es prevenir fugas de información y detectar comportamientos que puedan indicar
+    amenazas internas. Sin embargo, el sistema recopila datos que podrían considerarse
+    invasivos de la privacidad, y los empleados no han sido plenamente informados sobre el
+    alcance de la vigilancia.
+  </p>
+  <p><strong>Aplicación:</strong></p>
+  <ul>
+    <li><strong>Dilema:</strong> Se implementa un sistema avanzado de monitorización que registra todas las actividades de los empleados sin informarles plenamente.</li>
+    <li><strong>Impacto:</strong> Riesgo de invasión a la privacidad y posible desconfianza entre empleados y empresa.</li>
+    <li><strong>Decisión:</strong> Se propone balancear la seguridad con respeto a la privacidad y transparencia.</li>
+    <li><strong>Resultado:</strong> Se establecen políticas claras, transparencia en la monitorización y salvaguardas para proteger los derechos.</li>
+  </ul>
+  <p><strong>Evaluación del impacto:</strong></p>
+  <ul>
+    <li>Mayor claridad y confianza entre empleados y dirección.</li>
+    <li>Reducción de posibles abusos del sistema de vigilancia.</li>
+    <li>Equilibrio entre seguridad empresarial y derechos personales.</li>
+  </ul>
+</div>
+
+
+  <!-- Sección de preguntas guía sobre el caso -->
+ <div class="contenedor">
+  <h2>Preguntas guía sobre el caso de monitorización</h2>
+
+  <button onclick="toggleFAQ(0)">¿Hasta qué punto es éticamente justificable monitorizar a los empleados en nombre de la seguridad?</button>
+  <div class="respuesta-faq" id="faq0" style="display:none; margin-top:10px;">
+    <p>La monitorización puede ser justificable si es proporcional, necesaria y transparente, y siempre respetando la privacidad y dignidad de los empleados.</p>
+    <div class="quiz" id="quiz0" style="margin-top:10px; display:none;">
+      <p><strong>¿Y tú qué harías?</strong></p>
+      <button onclick="seleccionarOpcion(0, 0)">Implementar monitorización sin avisar para evitar que los empleados alteren su comportamiento</button>
+      <button onclick="seleccionarOpcion(0, 1)">Informar claramente a los empleados y aplicar monitorización proporcional</button>
+      <button onclick="seleccionarOpcion(0, 2)">No hacer ninguna monitorización por respeto absoluto a la privacidad</button>
+      <p id="mensaje0" style="font-weight:bold; margin-top:5px;"></p>
+    </div>
+  </div>
+
+  <button onclick="toggleFAQ(1)" style="margin-top: 10px;">¿Qué nivel de transparencia debería existir respecto a estas prácticas?</button>
+  <div class="respuesta-faq" id="faq1" style="display:none; margin-top:10px;">
+    <p>Debe existir una comunicación clara y completa, informando a los empleados sobre qué datos se recogen, con qué propósito y cómo se protegerá su privacidad.</p>
+    <div class="quiz" id="quiz1" style="margin-top:10px; display:none;">
+      <p><strong>¿Y tú qué harías?</strong></p>
+      <button onclick="seleccionarOpcion(1, 0)">Solo decir a los empleados lo mínimo para evitar preocupaciones</button>
+      <button onclick="seleccionarOpcion(1, 1)">Comunicar claramente qué datos se recogen y para qué se usan</button>
+      <button onclick="seleccionarOpcion(1, 2)">No comunicar nada para proteger secretos de la empresa</button>
+      <p id="mensaje1" style="font-weight:bold; margin-top:5px;"></p>
+    </div>
+  </div>
+
+  <!-- Pregunta 3 -->
+  <button onclick="toggleFAQ(2)" style="margin-top: 10px;">¿Cómo equilibrar los intereses legítimos de seguridad de la empresa con los derechos de privacidad de los empleados?</button>
+  <div class="respuesta-faq" id="faq2" style="display:none; margin-top:10px;">
+    <p>Se debe buscar un balance mediante políticas éticas, límites claros, auditorías independientes y opciones para que los empleados puedan expresar inquietudes.</p>
+    <div class="quiz" id="quiz2" style="margin-top:10px; display:none;">
+      <p><strong>¿Y tú qué harías?</strong></p>
+      <button onclick="seleccionarOpcion(2, 0)">Ignorar preocupaciones de privacidad para priorizar la seguridad</button>
+      <button onclick="seleccionarOpcion(2, 1)">Crear políticas claras y transparentes que respeten la privacidad</button>
+      <button onclick="seleccionarOpcion(2, 2)">Dejar la decisión a cada supervisor sin reglas fijas</button>
+      <p id="mensaje2" style="font-weight:bold; margin-top:5px;"></p>
+    </div>
+  </div>
+
+  <!-- Pregunta 4 -->
+  <button onclick="toggleFAQ(3)" style="margin-top: 10px;">¿Qué papel juegan las auditorías independientes en la monitorización ética?</button>
+  <div class="respuesta-faq" id="faq3" style="display:none; margin-top:10px;">
+    <p>Las auditorías independientes aseguran que la monitorización cumple con estándares éticos y legales, manteniendo la confianza y transparencia.</p>
+    <div class="quiz" id="quiz3" style="margin-top:10px; display:none;">
+      <p><strong>¿Y tú qué harías?</strong></p>
+      <button onclick="seleccionarOpcion(3, 0)">Evitar auditorías para no complicar procesos</button>
+      <button onclick="seleccionarOpcion(3, 1)">Implementar auditorías periódicas con terceros independientes</button>
+      <button onclick="seleccionarOpcion(3, 2)">Hacer auditorías internas sin involucrar a terceros</button>
+      <p id="mensaje3" style="font-weight:bold; margin-top:5px;"></p>
+    </div>
+  </div>
+
+  <!-- Pregunta 5 -->
+  <button onclick="toggleFAQ(4)" style="margin-top: 10px;">¿Cómo deben los empleados poder expresar sus inquietudes sobre la monitorización?</button>
+  <div class="respuesta-faq" id="faq4" style="display:none; margin-top:10px;">
+    <p>Los empleados deben contar con canales confidenciales y seguros para expresar inquietudes sin temor a represalias.</p>
+    <div class="quiz" id="quiz4" style="margin-top:10px; display:none;">
+      <p><strong>¿Y tú qué harías?</strong></p>
+      <button onclick="seleccionarOpcion(4, 0)">No permitir que los empleados cuestionen la monitorización</button>
+      <button onclick="seleccionarOpcion(4, 1)">Crear canales confidenciales para que puedan expresar preocupaciones</button>
+      <button onclick="seleccionarOpcion(4, 2)">Pedir que las inquietudes se comuniquen solo en reuniones públicas</button>
+      <p id="mensaje4" style="font-weight:bold; margin-top:5px;"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Opciones correctas por FAQ
+  const respuestasCorrectas = [1, 1, 1, 1, 1];
+
+  function toggleFAQ(indice) {
+    const faq = document.getElementById('faq' + indice);
+    const quiz = document.getElementById('quiz' + indice);
+    
+    if (faq.style.display === 'none' || faq.style.display === '') {
+      faq.style.display = 'block';
+      quiz.style.display = 'block';
+    } else {
+      faq.style.display = 'none';
+      quiz.style.display = 'none';
+      resetQuiz(indice);
+    }
+  }
+
+  function seleccionarOpcion(faqIndex, opcionIndex) {
+    const quizDiv = document.getElementById('quiz' + faqIndex);
+    const botones = quizDiv.querySelectorAll('button');
+    const mensaje = document.getElementById('mensaje' + faqIndex);
+    const correcta = respuestasCorrectas[faqIndex];
+
+    botones.forEach(btn => btn.disabled = true);
+
+    botones.forEach((btn, i) => {
+      if (i === correcta) {
+        btn.style.backgroundColor = '#4CAF50'; // verde
+        btn.style.color = 'white';
+      }
+      if (i === opcionIndex && i !== correcta) {
+        btn.style.backgroundColor = '#f44336'; // rojo
+        btn.style.color = 'white';
+      }
+    });
+
+    if (opcionIndex === correcta) {
+      mensaje.textContent = '¡Correcto!';
+      mensaje.style.color = '#4CAF50';
+    } else {
+      mensaje.textContent = 'Incorrecto, la respuesta correcta está marcada en verde.';
+      mensaje.style.color = '#f44336';
+    }
+  }
+
+  function resetQuiz(indice) {
+    const quizDiv = document.getElementById('quiz' + indice);
+    const botones = quizDiv.querySelectorAll('button');
+    const mensaje = document.getElementById('mensaje' + indice);
+
+    botones.forEach(btn => {
+      btn.disabled = false;
+      btn.style.backgroundColor = '';
+      btn.style.color = '';
+    });
+
+    mensaje.textContent = '';
+  }
+</script>
+
+
+
+  <!-- Área interactiva -->
+  <div class="contenedor">
+    <label for="entrada">¿Qué quieres compartir?</label>
+    <textarea id="entrada" placeholder="Escribe tu experiencia o inquietud aquí..."></textarea>
+    <button onclick="generarRespuesta()">Obtener consejo ético</button>
+    <button onclick="nuevaConsulta()" style="background-color:#28a745; margin-left:10px;">Nueva consulta</button>
+    <div class="respuesta" id="respuesta"></div>
+  </div>
+
+  <script>
+    function mostrarRespuestaFAQ(indice) {
+      const div = document.getElementById('faq' + indice);
+      div.style.display = div.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function generarRespuesta() {
+      const entrada = document.getElementById("entrada").value.toLowerCase();
+      const respuesta = document.getElementById("respuesta");
+      let textoRespuesta = "";
+      let mensajeEtico = "";
+      let metricas = "";
+
+      const principios = `
+Principios guía:
+- Honestidad y transparencia.
+- Respeto a la privacidad y derechos.
+- Responsabilidad y justicia.
+- Integridad y empatía.
+`;
+
+      // Procesos adaptados para cada caso
+      const procesoRobo = `
+Proceso de toma de decisiones éticas para casos de robo:
+1. Identificar el acto específico de robo o filtración de datos.
+2. Evaluar el daño causado a las víctimas y la organización.
+3. Revisar políticas internas y normas legales aplicables.
+4. Considerar opciones para mitigar el daño y prevenir futuras filtraciones.
+5. Decidir informar a las autoridades o superiores responsables.
+6. Implementar acciones correctivas y monitorear resultados.
+`;
+
+      const procesoMentira = `
+Proceso de toma de decisiones éticas para casos de mentira o desinformación:
+1. Reconocer el tipo y alcance de la mentira detectada.
+2. Analizar cómo afecta la confianza entre las partes involucradas.
+3. Consultar los valores de honestidad y transparencia.
+4. Evaluar formas de corregir la información errónea o engañosa.
+5. Decidir comunicar la verdad aunque sea incómoda o difícil.
+6. Reflexionar sobre las consecuencias y promover la cultura de verdad.
+`;
+
+      const procesoConducta = `
+Proceso de toma de decisiones éticas para casos de conducta inadecuada:
+1. Identificar claramente la conducta dañina o irrespetuosa.
+2. Valorar el impacto en las personas afectadas y el ambiente laboral.
+3. Revisar normas éticas y de convivencia establecidas.
+4. Considerar intervenciones para educar o sancionar según corresponda.
+5. Tomar decisiones que promuevan respeto, justicia y empatía.
+6. Fomentar la reflexión y el cambio para prevenir futuras conductas.
+`;
+
+      const palabrasRobo = ["robo", "roban", "robaron", "robaran", "roben", "hurtar", "saquear", "despojar"];
+      const palabrasMentira = ["mentira", "mentir", "mienten", "miente", "mintio", "falso", "falsedad", "no dicen la verdad", "engaño", "engaños", "traición"];
+      const palabrasRoboInfo = ["robo de informacion", "filtración", "no hay privacidad", "privacidad", "no tienen privacidad", "fuga de datos"];
+      const palabrasConducta = ["humilla", "intolerancia", "crueldad", "maltrato", "irresponsabilidad", "insulto", "soborno", "estafa", "difamación"];
+
+      const contiene = (entrada, palabras) => palabras.some(p => entrada.includes(p));
+
+      if (contiene(entrada, palabrasRobo)) {
+        textoRespuesta += `Consulta relacionada con ROBO detectada.\n\n` + principios + procesoRobo;
+        metricas = `
+Métricas e indicadores con resultados concretos:
+| Indicador                        | Meta establecida     | Resultado esperado                  |
+|---------------------------------|----------------------|-------------------------------------|
+| Incidentes de robo              | Reducir en un 30%    | De 100 a 70                         |
+| Pérdida económica               | Reducir en un 25%    | De $50,000 a $37,500                |
+| Tiempo de respuesta             | Menor a 24 horas     | Mejora en atención                  |
+| Satisfacción de los afectados   | Mayor al 85%         | Retroalimentación positiva          |`;
+        mensajeEtico = `<div class="alerta-etica">El robo daña la confianza y el entorno. La integridad es el mejor camino en ciberseguridad.</div>`;
+      } else if (contiene(entrada, palabrasMentira)) {
+        textoRespuesta += `Consulta relacionada con MENTIRA detectada.\n\n` + principios + procesoMentira;
+        metricas = `
+Métricas e indicadores con resultados concretos:
+| Indicador                        | Meta establecida     | Resultado esperado                   |
+|----------------------------------|----------------------|--------------------------------------|
+| Casos de falsedad                | Reducir en un 40%    | De 50 a 30                           |
+| Confianza en comunicación        | Aumentar al 90%      | Mejor transparencia                  |
+| Resolución de malentendidos     | En menos de 12 horas | Más efectividad                      |
+| Satisfacción general             | Mayor al 85%         | Mejora del ambiente organizacional   |`;
+        mensajeEtico = `<div class="alerta-etica">La verdad construye puentes, la mentira los destruye. Sé siempre honesto y responsable.</div>`;
+      } else if (contiene(entrada, palabrasRoboInfo)) {
+    textoRespuesta += `Consulta relacionada con ROBO DE INFORMACIÓN detectada.\n\n` + principios + procesoRoboInfo;
+    metricas = `
+Métricas e indicadores con resultados concretos:
+| Indicador                           | Meta establecida     | Resultado esperado                   |
+|------------------------------------|---------------------|------------------------------------|
+| Incidentes de filtración           | Reducir en un 35%   | De 80 a 52                         |
+| Protección de privacidad           | Mejorar al 95%      | Menos vulnerabilidades reportadas |
+| Tiempo de respuesta a incidentes  | Menor a 12 horas    | Contención rápida                  |
+| Confianza de usuarios              | Aumentar al 90%     | Retroalimentación positiva         |`;
+    mensajeEtico = `<div class="alerta-etica">La protección de la información es vital para preservar la confianza y los derechos. Sé responsable y proactivo.</div>`;
+      } else if (contiene(entrada, palabrasConducta)) {
+        textoRespuesta += `Consulta relacionada con CONDUCTA INADECUADA detectada.\n\n` + principios + procesoConducta;
+        metricas = `
+Métricas e indicadores con resultados concretos:
+| Indicador                        | Meta establecida     | Resultado esperado                   |
+|----------------------------------|----------------------|--------------------------------------|
+| Incidentes de maltrato          | Reducir en un 35%    | De 200 a 130                         |
+| Casos de difamación o insultos  | Reducción significativa | Entorno más respetuoso            |
+| Denuncias por soborno o estafa  | Cero tolerancia       | Eliminación de malas prácticas       |
+| Clima ético en el entorno       | Aumentar al 90%       | Cultura de respeto y valores         |`;
+        mensajeEtico = `<div class="alerta-etica">La conducta ética fortalece comunidades. Evita el maltrato y promueve el respeto y la justicia.</div>`;
+      } else {
+        textoRespuesta = "Gracias por compartir. Reflexiona con empatía, respeto y busca siempre actuar de forma justa y honesta.";
+      }
+
+      respuesta.innerHTML = `<pre>${textoRespuesta}${metricas}</pre>${mensajeEtico}`;
+    }
+
+    function nuevaConsulta() {
+      document.getElementById("entrada").value = "";
+      document.getElementById("respuesta").innerHTML = "";
+    }
+  </script>
+<div class="contenedor" style="text-align: center; margin-top: 50px;">
+  <h2 style="color: #004080;">Reflexión Final</h2>
+  <p style="font-size: 18px; font-style: italic; color: #333;">
+    "La ética no es una teoría, es una práctica que construye confianza en el mundo digital."
+  </p>
+<!-- Imagen insertada aquí -->
+  <img src="etica.jpg" alt="Monitorización empleados" style="display:block; margin: 15px auto; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.15);">
+
+</body>
+<div class="contenedor" style="margin-top: 50px; text-align: center;">
+  <h2></h2>
+  <p id="fraseEtica" style="font-weight: bold; font-size: 20px; color: #004080;"></p>
+</div>
+<!-- Imagen insertada aquí -->
+  <img src="nota.jpg" alt="Monitorización empleados" style="display:block; margin: 15px auto; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.15);">
+
+<script>
+  const frase = "Haz siempre lo correcto, aunque nadie te mire, porque la honestidad no se demuestra con testigos, sino con conciencia. Ser íntegro es regalarle paz a tu alma y dignidad a tu camino.";
+  let i = 0;
+  function escribir() {
+    if (i < frase.length) {
+      document.getElementById("fraseEtica").innerHTML += frase.charAt(i);
+      i++;
+      setTimeout(escribir, 60);
+    }
+  }
+  escribir();
+</script>
+<!-- Video final -->
+<div style="text-align: center; margin-top: 30px;">
+  <h2 style="animation: fadeIn 3s ease-in-out; font-size: 1.5em; color: #333;">
+    🎯 La ética guía nuestras decisiones... y define nuestro impacto.
+  </h2>
+
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/h5KKmbZZ_l4" 
+    title="Reflexión final sobre ética" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen style="margin-top: 20px;">
+  </iframe>
+
+  <p style="animation: fadeIn 4s ease-in-out 2s forwards; opacity: 0; font-size: 1.2em; margin-top: 30px; color: #2e7d32;">
+    🙏 Muchas gracias por su atención y por esta clase, <br>
+    <strong>Profesor Luis Mariano Moreira Flores</strong>. <br>
+    ¡Sus enseñanzas sobre ética nos inspiran a tomar decisiones responsables!
+  </p>
+</div>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</div>
+</html>
+
+
